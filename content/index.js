@@ -1,19 +1,13 @@
 var topics = [
-	{
+	/* {
 		image: "img/logo.jpg",
 		text: "Привет мой друг, знаю, что это не оч хорошо, но я то знаю",
 		link: "#"
-	},
-	{
-		image: "img/aldie01.jpg",
-		text: "Lebes poru du bontu des bontu qui",
-		link: "#"
-	},
-	{
-		image: "img/aldie01.jpg",
-		text: "Lebes poru du bontu des bontu qui",
-		link: "#"
-	},
+	} */
 ]
 
-var content = "Hello Guys!"
+var more = btoa(escape("Сейчас это тестирование. С тех пор, как начнуться выпускаться истории по MonnaHistea и так далее, сюда будет заливаться контент. Пока что тут ничего. Ждем на обновление. Ждите новостей тут <a href='http://vk.com/aldiens'>На оффициальной группе VK</a>"));
+
+var content = "Всем привет. Рад вашему прибытию. Здесь вы найдете много чего интересного!"
+			+ "<br>Но именно сейчас, сайт находится в начале разработки.<br>"
+			+ "<a href='?f=more?c=" + more + "'> MORE </a>"

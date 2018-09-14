@@ -1,0 +1,1 @@
+var content = getAskParam64("c");

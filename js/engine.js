@@ -1,14 +1,31 @@
-var datas;
+// Configure -------------------
 
-window.onload = function() {
-	datas = document.getElementById("datas");
-	addLogo();
-	addMenus();
-	addTopics();
-	addContent();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -----------------------------
+
+var datas = document.getElementById("datas");
+var second = document.getElementById("second");
+
+function _init() {
+	_addLogo();
+	_addMenus();
+	_addContent();
+	_addTopics();
 }
 
-function addLogo() {
+function _addLogo() {
 	var body = document.getElementById("datas");
 	{
 		var img = document.createElement("img");
@@ -18,7 +35,7 @@ function addLogo() {
 	}
 }
 
-function addMenus() {
+function _addMenus() {
 	var center = document.createElement("center");
 	for (var i = 0; i < menus.length; i++) {
 		var o = menus[i];
@@ -27,7 +44,16 @@ function addMenus() {
 	datas.appendChild(center);
 }
 
-function addTopics() {
+function _addContent() {
+	if (window.content) {
+		var div = document.createElement("div");
+		datas.appendChild(div);
+		div.innerHTML += "<hr><font size=24px color=yellow><center>* * *</center></font>"
+						+ "<div class=ctxt>" + window.content + "</div><hr>";
+	}
+}
+
+function _addTopics() {
 	if (window.topics) {
 		var div = document.createElement("div");
 		datas.appendChild(div);
@@ -39,13 +65,5 @@ function addTopics() {
 			ctx += "</div>";
 			div.innerHTML += ctx;
 		}
-	}
-}
-
-function addContent() {
-	if (window.content) {
-		var div = document.createElement("div");
-		datas.appendChild(div);
-		div.innerHTML += "<hr><div class=ctxt>" + window.content + "</div>";
 	}
 }
