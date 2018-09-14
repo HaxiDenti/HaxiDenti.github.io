@@ -1,9 +1,7 @@
 window.addEventListener("load", function(){
-	setTimeout(function() {
-		var toLoad = getAskParam("f");
-		if (toLoad != "" && toLoad != undefined) { addScript(toLoad, _init); return; }
-		addScript("index", _init)
-	}, 400);
+	var toLoad = getAskParam("f");
+	if (toLoad != "" && toLoad != undefined) { addScript(toLoad, _init); return; }
+	addScript("index", _init)
 });
 
 function getAskParam(par) {
