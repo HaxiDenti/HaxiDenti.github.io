@@ -1,0 +1,37 @@
+.m {
+	font-size: 48px;
+	transition: 200ms;
+	color: white;
+	text-decoration: none;
+}
+
+.m:hover {
+	color: yellow;
+	margin-bottom: 0px;
+	border-radius: 32px;
+	border: solid;
+}
+
+.m:before { content: "[ " }
+.m:after  { content: " ]" }
+
+body {
+	background-color: black;
+}
+
+.cimg {
+	width: 50%;
+	float: left;
+	height: 300px;
+}
+
+.ctxt {
+	color: white;
+	font-size: 24px;
+	display: inline;
+	width: 49%;
+}
+
+.cbox {
+	height: 300px;
+}
