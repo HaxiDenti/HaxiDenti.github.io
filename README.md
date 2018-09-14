@@ -1,2 +1,0 @@
-# HaxiDenti.github.io
-Site
